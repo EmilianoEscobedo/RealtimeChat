@@ -1,23 +1,23 @@
 # Chat
 Real time react-firebase based Chat
 
-## To Do
+### To Do
 
-- 🗹 Scafolding
+- [x] Scafolding
 
     basic escafolding
-- ☐ App structure
+- [ ] App structure
 
     what - where
-- ☐ Routes
+- [ ] Routes
 
     define routes
-- ☐ Components
+- [ ] Components
 
     build components
-- ☐ Functionality
+- [ ] Functionality
 
     build funtionality (context and logic)
-- ☐ styles
+- [ ] styles
 
     define styles
