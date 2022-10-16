@@ -1,0 +1,19 @@
+header{
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #333333;
+    padding: 10px;
+}
+h1{
+    font-size: 5px;
+}
+.user__panel{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
