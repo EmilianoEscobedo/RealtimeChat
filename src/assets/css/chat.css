@@ -1,0 +1,59 @@
+.chat__screen{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 20px;
+}
+.chat__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #3a3a3a;
+    border-radius: 8px;
+    height: 10%;
+}
+.chat__msgs{
+    height: 80%;
+    overflow-y: scroll;
+}
+.message{
+    margin-top: 10px;
+    background-color: #212121;
+    padding: 10px;
+    border-radius: 8px;
+}
+#msgTime{
+    font-style: italic;
+    font-size: 13px;
+}
+
+.chat__newMsg{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    margin-top: 10px;
+    background-color: #3a3a3a;
+    border-radius: 8px;
+    
+}
+.chat__input{
+    width: 65%;
+    border-radius: 8px;
+    border: none;
+    height: 40px;
+    margin-left: 10px;
+}
+.chat__channelsMobile{
+    height: 70%;
+    margin-right: 5px ;
+}
+
+@media screen and (max-width:574px) {
+    .chat__screen{
+        width: 100%;
+        margin-right: 20px;
+    }
+}
+

@@ -1,11 +1,17 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Header } from './components/Header';
+import { About } from './routes/About';
+import { Home } from './routes/Home';
+
 export default function App() {
   return (
-    <div>
-      <img src="./vite.svg" alt="" />
-      <h1>
-        Hola, que tal, aca aprendiendo un poco de react
-      </h1>
-    </div>
-  )
+    <BrowserRouter>
+      <Header>
+        <Routes>
+          <Route exact path='/' element={<Home />}></Route>
+          <Route exact path='/about' element={<About />}></Route>
+        </Routes>
+      </Header>
+    </BrowserRouter>
+  );
 }
-

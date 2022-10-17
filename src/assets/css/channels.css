@@ -1,0 +1,49 @@
+.channels{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+    margin-left: 10px;
+    background-color: #3a3a3a;
+    border-radius: 8px;
+    padding: 10px;
+}
+h3{
+    margin: 0px !important;
+}
+ul{
+    padding: 0px !important;
+}
+li{
+    width: 100%;
+    margin-bottom: 4px;
+    text-align: center;
+    margin: 0px ;
+}
+ul button{
+    text-align: start;
+    background-color: #424649;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 5px;
+    width: 100%;
+    margin-top: 8px;
+}
+
+ul button:hover{
+    background-color: #7b7f83;
+    border-color: #373b3e;
+}
+
+#create__channel{
+    background-color: #212529;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 6px;
+}
+
+@media screen and (max-width:574px) {
+    .channels{
+        display: none;
+    }
+}
