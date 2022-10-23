@@ -1,11 +1,11 @@
-import React from 'react'
-import { ChatBox } from '../containers/ChatBox'
-export const Home = () => {
+/* eslint-disable react/jsx-no-useless-fragment */
+import ChatBox from "../containers/ChatBox";
+import Header from "../components/Header";
+
+export default function Home() {
   return (
     <>
-      <ChatBox>
-
-      </ChatBox>
+      <Header /> <ChatBox />
     </>
-  )
+  );
 }
