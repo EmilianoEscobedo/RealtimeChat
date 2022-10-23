@@ -6,7 +6,7 @@ Real time react-firebase based Chat
 - [x] Scafolding
 - [x] App structure
 - [x] Routes
-- [x] Styles
-- [ ] Components
-- [ ] Functionality
+- [ ] Styles
+- [x] Components
+- [x] Functionality
 
