@@ -1,17 +1,18 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Header } from './components/Header';
-import { About } from './routes/About';
-import { Home } from './routes/Home';
+import {Routes, Route, Navigate} from "react-router-dom";
+import Home from "./routes/Home";
+import Login from "./routes/Login";
+import {useAuthContext} from "./contexts/AuthContext";
 
 export default function App() {
+  const {user} = useAuthContext();
   return (
-    <BrowserRouter>
-      <Header>
-        <Routes>
-          <Route exact path='/' element={<Home />}></Route>
-          <Route exact path='/about' element={<About />}></Route>
-        </Routes>
-      </Header>
-    </BrowserRouter>
+    <Routes>
+      <Route
+        exact
+        path="/"
+        element={user ? <Home /> : <Navigate replace to="/login" />}
+      />
+      <Route exact path="/login" element={<Login />} />
+    </Routes>
   );
 }
