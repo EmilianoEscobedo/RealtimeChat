@@ -17,7 +17,7 @@ I built the logic of the interaction with the user and the sending and receiving
 I used the firestore non-relational database, the GoogleSignIn authentication service, and built read-write rules on the database. The app also runs on the firebase hosting service.
 <br><br>
 <div align="center">
-  <img src="https://i.ibb.co/cvBH5fj/Chat.png" alt="Chat Interface"/>
+  <img src="https://i.ibb.co/cvBH5fj/Chat.png" alt="Chat Interface" style="width:70%"/>
   <p>Chat Interface</p>
 </div>
 <br>
