@@ -4,7 +4,7 @@ I really enjoyed it a lot and learned about various things like components lifec
 <br><br>
 ## :question: What is
 This chat allows you to write and receive text messages in real time, create specific discord-style channels and all with a secure authentication system with GoogleSignIn
-<br>
+<br><br>
 <div align="center">
   <img src="https://i.ibb.co/ChKmGty/Login.png" alt="Login Interface"/>
   <p>Login Interface</p>
@@ -15,7 +15,7 @@ This chat allows you to write and receive text messages in real time, create spe
 I built the logic of the interaction with the user and the sending and receiving of data from the database. Use React.js and the react-hooks-firebase, react-bootstrap, material-UI and emoji-picker libraries.<br><br>
 ### In the backend
 I used the firestore non-relational database, the GoogleSignIn authentication service, and built read-write rules on the database. The app also runs on the firebase hosting service.
-<br>
+<br><br>
 <div align="center">
   <img src="https://i.ibb.co/cvBH5fj/Chat.png" alt="Chat Interface"/>
   <p>Chat Interface</p>
