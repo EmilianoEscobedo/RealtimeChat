@@ -1,5 +1,5 @@
 # Welcome to :speaking_head: TalkIT! RealTime Chat
-This was my second full stack project with React.js on the frontend and firebase on the backend. <br><br>
+This was my second full stack project with React.js on the frontend and Firebase on the backend. <br><br>
 I really enjoyed it a lot and learned about various things like components lifecycle, hooks, react UI libraries, handling non-relational databases and design patterns.
 <br><br>
 ## :question: What is
