@@ -8,6 +8,10 @@
     border-radius: 8px;
     padding: 10px;
 }
+.channels__header{
+    display: flex;
+    justify-content: space-between;
+}
 h3{
     margin: 0px !important;
 }
@@ -35,7 +39,9 @@ ul button:hover{
     border-color: #373b3e;
 }
 
-#create__channel{
+.Channels__profile{
+    display: flex;
+    align-items: center;
     background-color: #212529;
     border-radius: 8px;
     border: 1px solid transparent;
@@ -46,4 +52,18 @@ ul button:hover{
     .channels{
         display: none;
     }
+}
+
+.channels__add-mobile{
+    display: flex;
+    justify-content: center;
+    background-color: #424649;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 5px;
+    width: 100%;
+}
+.channels__add-mobile:hover{
+    background-color: #7b7f83;
+    border-color: #373b3e;
 }

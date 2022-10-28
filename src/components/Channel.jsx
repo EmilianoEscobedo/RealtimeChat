@@ -3,17 +3,25 @@
 /* eslint-disable react/button-has-type */
 
 import "../assets/css/channels.css";
+import TagIcon from '@mui/icons-material/Tag';
 import {useChatContext} from "../contexts/ChatContext";
 
+
 export default function Channel(props) {
-  const {name} = props.chanel;
-  const {setActualChat} = useChatContext();
+  const {name} = props.channel;
+  const { setActualChat } = useChatContext();
   const handleActualChat = (e) => {
-    setActualChat(e.target.textContent);
+    if (e.target.innerText != null){
+      setActualChat(e.target.innerText);
+    }
+    
   };
   return (
     <li>
-      <button onClick={handleActualChat}>{name}</button>
+      {name !== '👋 Welcome' ?
+      <button onClick={handleActualChat}><TagIcon />{name}</button>
+      :
+      <button onClick={handleActualChat}>{name}</button>} 
     </li>
   );
 }

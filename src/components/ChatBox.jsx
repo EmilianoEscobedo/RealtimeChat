@@ -1,5 +1,5 @@
-import Channels from "../components/Channels";
-import Chat from "../components/Chat";
+import Channels from "./Channels";
+import Chat from "./Chat";
 import "../assets/css/chatbox.css";
 
 export default function ChatBox() {

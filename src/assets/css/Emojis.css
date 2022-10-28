@@ -1,0 +1,17 @@
+.picker-btn{
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    margin-left: 10px;
+}
+.picker-spawn{
+    width: 0px;
+}
+aside {
+    position: relative !important;
+    bottom: 230px;
+    right: 220px;
+}

@@ -11,50 +11,39 @@
   width: 100%;
   background-color: #3a3a3a;
   border-radius: 8px;
-  height: 10%;
+  height: 100%;
 }
 .chat__msgs {
   height: 80%;
   overflow-y: scroll;
 }
-.message {
+.chat__message {
   margin-top: 10px;
   background-color: #212121;
   padding: 10px;
   border-radius: 8px;
 }
-#msgTime {
+.chat__msg-time {
   font-style: italic;
   font-size: 13px;
   margin-right: 10px;
 }
 
-.chat__newMsg {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 10%;
-  margin-top: 10px;
-  background-color: #3a3a3a;
-  border-radius: 8px;
-}
 .chat__input {
-  width: 65%;
+  width: 60%;
   border-radius: 8px;
   border: none;
   height: 40px;
   margin-left: 10px;
 }
-.msgPhoto {
-  width: 45px;
-  border-radius: 50%;
+.chat__input-action{
+  display: flex;
+  width: 40%;
 }
-.msgAuthor {
+
+.chat__msg-Author {
   font-size: 14px;
   font-style: italic;
-}
-.msgContent {
-  margin-left: 60px;
 }
 .chat__channelsMobile {
   height: 70%;
@@ -68,5 +57,21 @@
   }
 }
 form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+  margin-top: 10px;
+  background-color: #3a3a3a;
+  border-radius: 8px;
   width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+@media screen and (min-width:574px) {
+  .channels__mobile-toggle{
+    display: none;
+  }
 }

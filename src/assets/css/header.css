@@ -13,3 +13,10 @@ header{
     align-items: center;
     width: 30%;
 }
+button{
+    border: none;
+    background-color: transparent;
+}
+h1{
+    font-family: 'Permanent Marker', cursive;
+}

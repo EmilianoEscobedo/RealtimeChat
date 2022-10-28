@@ -1,10 +1,14 @@
 /* eslint-disable react/button-has-type */
 import "../assets/css/channels.css";
 import Swal from "sweetalert2";
-import {useChatContext} from "../contexts/ChatContext";
+import {ExpandMore, Add } from "@mui/icons-material"
+import { Avatar } from '@mui/material'
+import { useAuthContext } from "../contexts/AuthContext";
+import { useChatContext } from "../contexts/ChatContext";
 import Channel from "./Channel";
 
 export default function Channels() {
+  const { user } = useAuthContext();
   const {createNewChannel, channels} = useChatContext();
   const newChannel = async () => {
     const {value: nameChannel} = await Swal.fire({
@@ -15,24 +19,22 @@ export default function Channels() {
     });
     createNewChannel(nameChannel);
   };
-
   return (
-    <div
-      className="channels"
-      id="#channels__mobile"
-      aria-labelledby="offcanvasResponsiveLabel"
-      tabIndex="-1"
-    >
+    <div className="channels">
       <div>
-        <h3>Channels</h3>
+        <div className="channels__header">
+          <h3>Channels <ExpandMore /></h3>
+          <Add type="button" onClick={newChannel} />
+        </div>
         <ul>
           {channels &&
-            channels.map((cnl) => <Channel key={cnl.id} chanel={cnl} />)}
+            channels.map((cnl) => <Channel key={cnl.id} channel={cnl} />)}
         </ul>
       </div>
-      <button type="button" className=" mb-1 btn btn-dark" onClick={newChannel}>
-        Create Channel
-      </button>
+      <div className="Channels__profile">
+        <Avatar className="ms-2" src={user.photoURL} />
+        <p className="ms-3">{user.displayName}</p>
+      </div>
     </div>
   );
 }
